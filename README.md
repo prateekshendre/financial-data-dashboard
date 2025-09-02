@@ -68,11 +68,21 @@ financial-data-dashboard/
 
 ## 🖼 Key Visuals
 
-1. **Normalized Performance** – BTC vs SPY vs GLD vs TLT (index = 100 start)
-2. **Correlation Heatmap** – asset return correlations
-3. **Rolling 30d Correlation** – BTC vs SPY dynamics
-4. **Drawdowns** – peak-to-trough performance per asset
-5. **Summary Table** – returns and volatility snapshot
+1. **Normalized Performance** – BTC vs SPY vs GLD vs TLT (index = 100 start)  
+   *(plots/normalized_performance.png)*  
+
+2. **Correlation Heatmap** – asset return correlations  
+   *(plots/correlation_heatmap.png)*  
+
+3. **Rolling 30d Correlation** – BTC vs SPY dynamics  
+   *(plots/rolling_corr_btc_spy.png)*  
+
+4. **Drawdowns** – peak-to-trough performance per asset  
+   *(plots/drawdowns.png)*  
+
+5. **Summary Table** – cumulative return and annualized volatility  
+   *(plots/summary_table.png)*  
+
 
 *All plots saved in `/plots` as high-res PNGs for LinkedIn and reports.*
 
