@@ -40,14 +40,23 @@ Exports clean CSVs and plots for sharing and future dashboarding (e.g., Power BI
 ## 📁 Repository Layout
 
 ```
-financial-data-dashboard
+
+financial-data-dashboard/
 │
-├── data/                # Cleaned CSVs (prices, returns)
-├── notebooks/           # Jupyter exploration + analysis
-├── plots/               # Exported PNG visuals
-├── scripts/             # Optional reusable scripts
-├── requirements.txt     # Project dependencies
-└── README.md            # This file
+├── data/                   # Cleaned CSVs (prices, returns)
+│   ├── prices.csv
+│   └── returns.csv
+│
+├── notebooks/              # Jupyter notebooks
+│   └── dashboard_analysis.ipynb
+│
+├── plots/                  # Exported PNG visuals
+│   └── (to be added: normalized_performance.png, etc.)
+│
+├── README.md               # Project overview
+├── LICENSE                 # License info
+└── .gitignore              # Ignore rules
+
 ```
 
 ---
