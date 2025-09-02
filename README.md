@@ -1,55 +1,124 @@
-Financial Data Dashboard
+Got it — let’s upgrade that plain-text README into something **clean, structured, and recruiter-ready** with headings, separators, and bold highlights. You can copy-paste this directly as your `README.md` in GitHub, and it’ll render beautifully.
 
-Quick summary
-Project compares daily performance and risk of selected assets. Python does the data work. Visuals are produced with Seaborn and Matplotlib. Results export as images and CSVs for sharing and for a Power BI dashboard if needed.
+---
 
-What this does
-1. Fetches daily prices using yfinance
-2. Cleans and aligns time series with pandas
-3. Computes daily returns, cumulative returns, rolling volatility, and drawdowns
-4. Normalizes series to an index start 100 for clean comparison
-5. Exports cleaned CSVs and publication ready PNG images
+# 📊 Financial Data Dashboard
 
-Data
-Source: yfinance
-Sample tickers used: BTC-USD, SPY, GLD, TLT
+Track **portfolio performance, risk, and trends** with Python for computation and Seaborn/Matplotlib for visualization.
+Exports clean CSVs and plots for sharing and future dashboarding (e.g., Power BI).
 
-Key methods
-pandas for ETL and feature creation
-numpy for numeric ops
-seaborn and matplotlib for plots
-yfinance for price fetch
+---
 
-Repository layout
-data
-  raw.csv or readme describing how to regenerate raw data
-notebooks
-  01_explore_and_normalize.ipynb
-  02_plots_and_exports.ipynb
-scripts
-  plot_performance.py
-plots
-  normalized_performance.png
-  correlation_heatmap.png
-requirements.txt
-README.md
+## 🚀 What This Project Does
 
-How to run locally
-1. Create and activate a Python virtual environment
-2. Install dependencies
+* **Fetches** daily asset prices via `yfinance`
+* **Cleans & aligns** data with `pandas`
+* **Computes** daily returns, cumulative returns, rolling volatility, and drawdowns
+* **Normalizes** assets to start at 100 for comparison
+* **Exports** publication-ready plots and CSV files
+
+---
+
+## 📂 Data
+
+* **Source:** Yahoo Finance (`yfinance`)
+* **Assets used:**
+
+  * Bitcoin (**BTC-USD**)
+  * US Equities (**SPY**)
+  * Gold (**GLD**)
+  * US Treasuries (**TLT**)
+
+---
+
+## 🛠 Methods & Tools
+
+* **pandas** – data wrangling
+* **numpy** – numeric ops
+* **yfinance** – financial data fetch
+* **matplotlib & seaborn** – plots
+* **Jupyter Notebook** – analysis workflow
+
+---
+
+## 📁 Repository Layout
+
+```
+financial-data-dashboard
+│
+├── data/                # Cleaned CSVs (prices, returns)
+├── notebooks/           # Jupyter exploration + analysis
+├── plots/               # Exported PNG visuals
+├── scripts/             # Optional reusable scripts
+├── requirements.txt     # Project dependencies
+└── README.md            # This file
+```
+
+---
+
+## 🖼 Key Visuals
+
+1. **Normalized Performance** – BTC vs SPY vs GLD vs TLT (index = 100 start)
+2. **Correlation Heatmap** – asset return correlations
+3. **Rolling 30d Correlation** – BTC vs SPY dynamics
+4. **Drawdowns** – peak-to-trough performance per asset
+5. **Summary Table** – returns and volatility snapshot
+
+*All plots saved in `/plots` as high-res PNGs for LinkedIn and reports.*
+
+---
+
+## ⚡ How to Run Locally
+
+1. Clone repo
+
+   ```bash
+   git clone https://github.com/your-username/financial-data-dashboard.git
+   cd financial-data-dashboard
+   ```
+2. Create a virtual environment
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # or venv\Scripts\activate on Windows
+   ```
+3. Install dependencies
+
+   ```bash
    pip install -r requirements.txt
-3. Run the notebook notebooks/01_explore_and_normalize.ipynb to generate cleaned CSVs in data
-4. Run the script scripts/plot_performance.py to generate PNGs in plots
+   ```
+4. Run notebooks to generate data + plots
 
-Repro command
+   ```bash
+   jupyter lab
+   ```
+
+---
+
+## 📌 Example Command
+
+Generate normalized performance plot from script:
+
+```bash
 python scripts/plot_performance.py --input data/prices.csv --out plots/normalized_performance.png
+```
 
-Suggested next visuals to add
-1. Normalized performance line chart that starts all series at 100
-2. Correlation heatmap of daily returns
-3. Rolling 30 day correlation BTC versus SPY
-4. Drawdown chart per asset
-5. Snapshot table of cumulative return and annualized volatility
+---
 
-License
-Add a short license line if you want public sharing
+## 🔮 Next Steps
+
+* Add **sector weights** & factor analysis
+* Extend **rolling metrics** (volatility, Sharpe)
+* Add **forecast overlays** with moving averages
+
+---
+
+## 📜 License
+
+MIT License (or whichever you choose)
+
+---
+
+👉 This README now has clear structure, icons for visual appeal, and bold highlights where recruiters’ eyes naturally land.
+
+Do you want me to also draft the **LinkedIn post caption** in a matching clean style (short, professional, and recruiter-friendly) so it pairs seamlessly with this repo?
