@@ -43,7 +43,7 @@ Exports clean CSVs and plots for sharing and future dashboarding (e.g., Power BI
 
 financial-data-dashboard/
 │
-├── data/                   # Cleaned CSVs (prices, returns)
+├── data/                   # Cleaned CSVs
 │   ├── prices.csv
 │   └── returns.csv
 │
@@ -51,11 +51,16 @@ financial-data-dashboard/
 │   └── dashboard_analysis.ipynb
 │
 ├── plots/                  # Exported PNG visuals
-│   └── (to be added: normalized_performance.png, etc.)
+│   ├── normalized_performance.png
+│   ├── correlation_heatmap.png
+│   ├── rolling_corr_btc_spy.png
+│   ├── drawdowns.png
+│   └── summary_table.png
 │
 ├── README.md               # Project overview
 ├── LICENSE                 # License info
 └── .gitignore              # Ignore rules
+
 
 ```
 
