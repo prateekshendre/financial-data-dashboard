@@ -111,4 +111,4 @@ python scripts/plot_performance.py --input data/prices.csv --out plots/normalize
 
 ## 📜 License
 
-MIT License (or whichever you choose)
+MIT License
