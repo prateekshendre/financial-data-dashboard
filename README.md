@@ -1,7 +1,3 @@
-Got it — let’s upgrade that plain-text README into something **clean, structured, and recruiter-ready** with headings, separators, and bold highlights. You can copy-paste this directly as your `README.md` in GitHub, and it’ll render beautifully.
-
----
-
 # 📊 Financial Data Dashboard
 
 Track **portfolio performance, risk, and trends** with Python for computation and Seaborn/Matplotlib for visualization.
@@ -116,9 +112,3 @@ python scripts/plot_performance.py --input data/prices.csv --out plots/normalize
 ## 📜 License
 
 MIT License (or whichever you choose)
-
----
-
-👉 This README now has clear structure, icons for visual appeal, and bold highlights where recruiters’ eyes naturally land.
-
-Do you want me to also draft the **LinkedIn post caption** in a matching clean style (short, professional, and recruiter-friendly) so it pairs seamlessly with this repo?
